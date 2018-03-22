@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>519774496041-l2vi7m9lguvm15r3n7lm84b6enfc9sbs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.519774496041-l2vi7m9lguvm15r3n7lm84b6enfc9sbs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGg1Fk7EFpRxifb-S9GT4B5o_3hAhhipU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>519774496041</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ahmedhamdygomaa.tic-tac-toe</string>
+	<key>PROJECT_ID</key>
+	<string>tic-tac-toe-6464f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tic-tac-toe-6464f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:519774496041:ios:aac0a056679b5698</string>
+	<key>DATABASE_URL</key>
+	<string>https://tic-tac-toe-6464f.firebaseio.com</string>
+</dict>
+</plist>
