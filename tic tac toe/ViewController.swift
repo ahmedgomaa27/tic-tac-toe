@@ -49,11 +49,14 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
 
     func configureDataBase(){
         mRef = Database.database().reference()
-        let temp = Game()
-        temp.player1 = "ahmed"
-        mRef.child("Games").child("game1").child("player1").setValue("nil")
-        mRef.child("Games").child("game1").child("player2").setValue("nil")
+//        let temp = Game()
+//        temp.player1 = "ahmed"
+//        mRef.child("Games").child("game1").child("player1").setValue("nil")
+//        mRef.child("Games").child("game1").child("player2").setValue("nil")
 
+        let player1 = Player(name: "muhammad", DatabaseReference: mRef)
+        let Player2 = Player(name: "ahmed", DatabaseReference: mRef)
+        var game = Game(DatabaseRef: mRef, player1: player1, player2: Player2)
 
 
     }
