@@ -14,73 +14,41 @@ class Game{
     static var baseId = 0
 
     var gameId:Int
-    var player1Id:String? //TODO: string or int
-    var player2Id:String?
-    var winnerId :String?
-    var isFinished:Bool?
-    var isAvailabe:Bool{return (player1Id?.isEmpty)! || (player2Id?.isEmpty)!}
-    var gameArray:[String]?
-    var game :[String:Any]?
-
-//    init(DatabaseRef: DatabaseReference) {
-//    
-//        gameId = Game.baseId
-//        Game.baseId += 1
-//        
-////        DatabaseRef.child("Games").child("game\(gameId!)").child(Constants.GameKeys.player1Id).setValue("nil")
-//        
-//        game = [
-//            Constants.GameKeys.gameId: gameId ?? -1,
-//            Constants.GameKeys.player1Id: "nil",
-//            Constants.GameKeys.player2Id: "nil",
-//            Constants.GameKeys.winnerId: "nil",
-//            Constants.GameKeys.isFinished: false,
-//            Constants.GameKeys.isAvailabe: false,
-//            ]
-//        
-//        DatabaseRef.child("Games").child("game\(gameId!)").setValue(game)
-//
-//        
-////        DatabaseRef.child("Games").child("game\(gameId!)").child(Constants.GameKeys.player1).setValue("nil")
-////        DatabaseRef.child("Games").child("game\(gameId!)").child(Constants.GameKeys.player2).setValue("nil")
-////        DatabaseRef.child("Games").child("game\(gameId!)").child(Constants.GameKeys.winnerId).setValue("nil")
-////        DatabaseRef.child("Games").child("game\(gameId!)").child(Constants.GameKeys.isAvailabe).setValue("nil")
-////        DatabaseRef.child("Games").child("game\(gameId!)").child(Constants.GameKeys.isFinished).setValue("nil")
-//
-//
-//        
-//
-//    }
+    var player1Id:String //TODO: string or int
+    var player2Id:String
+    var winnerId :String
+    var isFinished:Bool
+    var isAvailabe:Bool{return (player1Id == "-1") || (player2Id == "-1") }
+    var gameArray:[String]
+    var game :[String:Any]
     
     init(DatabaseRef: DatabaseReference, player1: Player? = nil, player2: Player? = nil) {
         
         gameId = Game.baseId
         Game.baseId += 1
         
-        //        DatabaseRef.child("Games").child("game\(gameId!)").child(Constants.GameKeys.player1Id).setValue("nil")
-        
+        player1Id = "-1"
+        player2Id = "-1"
+        winnerId = "-1"
+        isFinished = false
+        gameArray = ["X","X","X",
+                    "X","X","X",
+                    "X","X","X"]
         // TODO: initiallize almost all properties before assgning them to game dictionary
         
         game = [
             Constants.GameKeys.gameId: gameId,
             Constants.GameKeys.player1Id: String(describing: player1?.playerId ?? -1),
             Constants.GameKeys.player2Id: String(describing: player2?.playerId ?? -1),
-            Constants.GameKeys.winnerId: -1,
-            Constants.GameKeys.isFinished: false,
+            Constants.GameKeys.winnerId: winnerId,
+            Constants.GameKeys.isFinished: isFinished,
             Constants.GameKeys.isAvailabe: false,
-            Constants.GameKeys.gameArray: ["X","X","X",
-                                           "X","X","X",
-                                           "X","X","X"]
+            Constants.GameKeys.gameArray: gameArray
         ]
         
         DatabaseRef.child("Games").child("game\(gameId)").setValue(game)
     }
 }
-
-
-
-
-
 
 
 
@@ -135,8 +103,6 @@ class Player{
         
     }
 }
-
-
 
 
 
