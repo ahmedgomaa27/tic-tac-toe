@@ -17,7 +17,7 @@
 		5312FE382063DE6C00150AC3 /* tic_tac_toeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312FE372063DE6C00150AC3 /* tic_tac_toeUITests.swift */; };
 		5312FE462063DEBC00150AC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5312FE452063DEBC00150AC3 /* GoogleService-Info.plist */; };
 		5312FE482063E39E00150AC3 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312FE472063E39E00150AC3 /* CustomCollectionViewCell.swift */; };
-		5312FE4A2063E59600150AC3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312FE492063E59600150AC3 /* Models.swift */; };
+		5312FE4A2063E59600150AC3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312FE492063E59600150AC3 /* Utils.swift */; };
 		9752CAC78219765E6195064E /* Pods_tic_tac_toe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F577040FF66889E62B47249D /* Pods_tic_tac_toe.framework */; };
 		989648F68042C50C3F5506EE /* Pods_tic_tac_toeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A146551473FE43D70C838A /* Pods_tic_tac_toeUITests.framework */; };
 		D772A8BB024785FD3C2CA05C /* Pods_tic_tac_toeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC7CD092944E7DD0599700F /* Pods_tic_tac_toeTests.framework */; };
@@ -59,7 +59,7 @@
 		5312FE392063DE6C00150AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5312FE452063DEBC00150AC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5312FE472063E39E00150AC3 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
-		5312FE492063E59600150AC3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5312FE492063E59600150AC3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		912D7FBD8C5A8A8A8DCA9F4B /* Pods-tic tac toeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tic tac toeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tic tac toeTests/Pods-tic tac toeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96A146551473FE43D70C838A /* Pods_tic_tac_toeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tic_tac_toeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AF94DCEB4366B45352D55B /* Pods-tic tac toe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tic tac toe.release.xcconfig"; path = "Pods/Target Support Files/Pods-tic tac toe/Pods-tic tac toe.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				5312FE452063DEBC00150AC3 /* GoogleService-Info.plist */,
 				5312FE1B2063DE6C00150AC3 /* tic_tac_toe.xcdatamodeld */,
 				5312FE472063E39E00150AC3 /* CustomCollectionViewCell.swift */,
-				5312FE492063E59600150AC3 /* Models.swift */,
+				5312FE492063E59600150AC3 /* Utils.swift */,
 			);
 			path = "tic tac toe";
 			sourceTree = "<group>";
@@ -479,7 +479,7 @@
 				5312FE152063DE6C00150AC3 /* AppDelegate.swift in Sources */,
 				5312FE1D2063DE6C00150AC3 /* tic_tac_toe.xcdatamodeld in Sources */,
 				5312FE482063E39E00150AC3 /* CustomCollectionViewCell.swift in Sources */,
-				5312FE4A2063E59600150AC3 /* Models.swift in Sources */,
+				5312FE4A2063E59600150AC3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

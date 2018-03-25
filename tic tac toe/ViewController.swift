@@ -54,10 +54,13 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
 //        mRef.child("Games").child("game1").child("player1").setValue("nil")
 //        mRef.child("Games").child("game1").child("player2").setValue("nil")
 
-        let player1 = Player(name: "muhammad", DatabaseReference: mRef)
-        let Player2 = Player(name: "ahmed", DatabaseReference: mRef)
-        var game = Game(DatabaseRef: mRef, player1: player1, player2: Player2)
-
+//        let player1 = Player(name: "muhammad", DatabaseReference: mRef)
+//        let Player2 = Player(name: "ahmed", DatabaseReference: mRef)
+//        var game = Game(DatabaseRef: mRef, player1: player1, player2: Player2)
+        
+        let game = makeGame(DatabaseRef: mRef)
+        let player = makePlayer(name: "MuhammadAli", DatabaseRef: mRef)
+        getAvailableGame(DatabaseRef: mRef)
 
     }
 
