@@ -119,7 +119,7 @@ func makeGame(DatabaseRef: DatabaseReference) -> NSDictionary{
     
     DatabaseRef.child("Games").childByAutoId().setValue(game)
     
-    return game
+    return game as NSDictionary
     }
 
 func makePlayer(name: String, DatabaseRef: DatabaseReference) -> NSDictionary{
@@ -132,7 +132,11 @@ func makePlayer(name: String, DatabaseRef: DatabaseReference) -> NSDictionary{
         ] as [String : Any]
     
     DatabaseRef.child("Players").childByAutoId().setValue(player)
-    return player
+    return player as NSDictionary
+}
+
+func addPlayerToGame(playerId: Int, gameId: Int, DatabaseRef: DatabaseReference){
+    
 }
 
 //func getGame(Id: String) -> NSDictionary{
